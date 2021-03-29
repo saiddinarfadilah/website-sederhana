@@ -17,6 +17,7 @@
   width: 960px;
   margin: auto;
   box-shadow: 1px 1px 3px black;
+  background-color: white;
 }
 
 body {
@@ -64,36 +65,39 @@ body {
   border-bottom: 5px solid black;
 }
 
-.article {
+.main {
+  width: 600px;
   background-color: white;
   padding: 20px;
+  box-sizing: border-box;
+  float: left;
 }
 
-.article .article-title {
+.main .main-title {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.article .penulis {
+.main .penulis {
   font-size: 11px;
   margin-bottom: 15px;
   margin-top: -5px;
 }
 
-.article .penulis a {
+.main .penulis a {
   text-decoration: none;
   color: black;
 }
 
-.article .penulis a:hover {
+.main .penulis a:hover {
   padding: 3px;
   background-color: black;
   color: white;
   border-radius: 3px;
 }
 
-.article p {
+.main p {
   margin-bottom: 10px;
   font-size: 14px;
   text-align: justify;
@@ -107,4 +111,50 @@ body {
   font-size: 13px;
   font-style: inherit;
   padding: 20px;
+}
+
+/* sidebar */
+.sidebar {
+  background-color: white;
+  width: 300px;
+  float: right;
+  padding: 10px;
+}
+
+.sidebar h3 {
+  padding: 20px 0;
+  font-weight: bold;
+}
+
+.sidebar img {
+  display: inline;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  /* border-radius: 50px; */
+  /* border: 2px solid black; */
+  float: left;
+  padding-right: 10px;
+  margin-top: 5px;
+}
+
+.sidebar p {
+  font-size: 14px;
+  text-align: justify;
+  margin-bottom: 5px;
+  padding-right: 10px;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
 }
